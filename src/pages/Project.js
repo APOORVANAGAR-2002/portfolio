@@ -6,10 +6,8 @@ import Image from "../images/projectBg.png";
 import TicTacToe from "../images/TicTacToe.png";
 import SnakeGame from "../images/SnakeGame.png";
 import AccessoriesSim from "../images/AccessoriesSim.png";
-import ApoorvaNagar from "../images/Apoorva Nagar.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Skills } from "./Skills";
 import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -148,6 +146,7 @@ function Project() {
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px"}}>
           <ThemeProvider>
+          <Typography variant="overline">HTML5, CSS3, BootStrap4</Typography>
             <Typography variant="h6"><b>Accessories Simulator</b></Typography>
             <Typography variant="body1">
               Worked within a team of two and developed a web-based application using HTML5, CSS3 as front-end
@@ -174,6 +173,7 @@ function Project() {
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px",  }}>
           <ThemeProvider>
+            <Typography variant="overline">C language</Typography>
             <Typography variant="h6"><b>Cafeteria Management System</b></Typography>
             <Typography variant="body1">
               Worked within a team of three and designed a console-based management system for cafes/restaurants
@@ -181,7 +181,7 @@ function Project() {
               for implementing file-handling.
             </Typography>
             <br />
-            <Link href="#" target="_blank" variant="button" style={{
+            {/* <Link href="#" target="_blank" variant="button" style={{
               color: "#00A8E8",
               border: "1px solid #00A8E8",
               textDecoration: "none",
@@ -189,7 +189,7 @@ function Project() {
               borderRadius: "5px"
             }}>
               View Project
-            </Link>
+            </Link> */}
           </ThemeProvider>
         </Grid>
       </Grid>
@@ -200,6 +200,7 @@ function Project() {
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px", }}>
           <ThemeProvider>
+          <Typography variant="overline">ReactJS</Typography>
             <Typography variant="h6"><b>Tic Tac Toe</b></Typography>
             <Typography variant="body1">
               A simple web based 2 player Tic Tac Toe application built using React and Material-UI.
@@ -225,13 +226,14 @@ function Project() {
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
           <ThemeProvider>
+          <Typography variant="overline">Java</Typography>
             <Typography variant="h6"><b>Snake Game</b></Typography>
             <Typography variant="body1">
               Worked within a team of five and developed a 2D Snake game using java as a part of the college PBL
               project.
             </Typography>
             <br />
-            <Link href="https://github.com/APOORVANAGAR-2002/Headphones" target="_blank" variant="button" style={{
+            {/* <Link href="#" target="_blank" variant="button" style={{
               color: "#00A8E8",
               border: "1px solid #00A8E8",
               textDecoration: "none",
@@ -239,7 +241,7 @@ function Project() {
               borderRadius: "5px"
             }}>
               View Project
-            </Link>
+            </Link> */}
           </ThemeProvider>
         </Grid>
       </Grid>
