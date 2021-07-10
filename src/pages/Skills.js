@@ -52,7 +52,7 @@ function Skills() {
 
     // </Grid>
 
-    <Grid container style={{ justifyContent: "center", paddingBottom: "50px", background:"#000000" }}>
+    <Grid container style={{ justifyContent: "center", paddingBottom: "50px", background: "#000000" }}>
 
       <Grid container style={{ padding: "10px" }}>
         <Grid item xs={12} >
@@ -80,70 +80,73 @@ function Skills() {
 
       <Grid container style={{ justifyContent: "center", textAlign: "center", padding: "10px" }}>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiPython fontSize="80px" color="#00A8E8" />
-          </Tilt>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiPython fontSize="80px" color="#00A8E8" />
+            </Tilt>
 
-        </Grid>
+          </Grid>
 
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiReact fontSize="80px" color="#ffffff"/>
-          </Tilt>
-        </Grid>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiReact fontSize="80px" color="#ffffff" />
+            </Tilt>
+          </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiHtml5 fontSize="80px" color="#00A8E8" />
-          </Tilt>
-        </Grid>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiHtml5 fontSize="80px" color="#00A8E8" />
+            </Tilt>
+          </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiCss3 fontSize="80px" color="#ffffff" />
-          </Tilt>
-        </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiJavascript1 fontSize="80px" color="#00A8E8" />
-          </Tilt>
-        </Grid>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiCss3 fontSize="80px" color="#ffffff" />
+            </Tilt>
+          </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiGit fontSize="80px" color="#ffffff" />
-          </Tilt>
-        </Grid>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiJavascript1 fontSize="80px" color="#00A8E8" />
+            </Tilt>
+          </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiGithubBadge fontSize="80px" color="#00A8E8" />
-          </Tilt>
-        </Grid>
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiGit fontSize="80px" color="#ffffff" />
+            </Tilt>
+          </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiGithubBadge fontSize="80px" color="#ffffff" />
-          </Tilt>
-        </Grid>
 
-        <Grid item xs={4} sm={2} style={{
-        }}>
-          <Tilt glareEnable>
-            <DiGithubBadge fontSize="80px" color="#00A8E8" />
-          </Tilt>
-        </Grid>
+
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiGithubBadge fontSize="80px" color="#00A8E8" />
+            </Tilt>
+          </Grid>
+
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiGithubBadge fontSize="80px" color="#ffffff" />
+            </Tilt>
+          </Grid>
+
+          <Grid item xs={4} sm={2} style={{
+          }}>
+            <Tilt glareEnable>
+              <DiGithubBadge fontSize="80px" color="#00A8E8" />
+            </Tilt>
+          </Grid>
 
       </Grid>
 

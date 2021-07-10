@@ -7,7 +7,10 @@ import TicTacToe from "../images/TicTacToe.png";
 import SnakeGame from "../images/SnakeGame.png";
 import AccessoriesSim from "../images/AccessoriesSim.png";
 import ApoorvaNagar from "../images/Apoorva Nagar.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Skills } from "./Skills";
+import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
   },
   image: {
-    '&: hover':{
-      background: "#f00",
+    '&: hover': {
+      background: "#f00000",
     }
   }
 }));
@@ -34,6 +37,10 @@ theme = responsiveFontSizes(theme);
 function Project() {
 
   const classes = useStyles();
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
 
   return (
     // <Grid container className={classes.root}>
@@ -108,7 +115,7 @@ function Project() {
 
     // </Grid>
 
-    <Grid container id="projects" style={{ paddingBottom: "50px", background: "#000000" }}>
+    <Grid container id="projects" style={{ paddingBottom: "50px", background: "#000000", overflowX: "hidden!important" }}>
 
       <Grid container style={{ padding: "10px" }}>
         <Grid item xs={12} >
@@ -135,11 +142,11 @@ function Project() {
       </Grid>
 
 
-      <Grid container style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
-        <Grid item xs={12} sm={4} style={{ textAlign: "center" }} >
+      <Grid container style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff", }}>
+        <Grid item xs={12} sm={4} style={{ textAlign: "center"}} >
           <img src={AccessoriesSim} alt="bg Image" style={{ width: "200px" }} />
         </Grid>
-        <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
+        <Grid item xs={12} sm={8} style={{ padding: "10px"}}>
           <ThemeProvider>
             <Typography variant="h6"><b>Accessories Simulator</b></Typography>
             <Typography variant="body1">
@@ -162,10 +169,10 @@ function Project() {
       </Grid>
 
       <Grid container direction="row-reverse" style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
-        <Grid item xs={12} sm={4} style={{ textAlign: "center" }} >
+        <Grid item xs={12} sm={4} style={{ textAlign: "center",  }} >
           <img src={Image} alt="bg Image" style={{ width: "200px" }} />
         </Grid>
-        <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
+        <Grid item xs={12} sm={8} style={{ padding: "10px",  }}>
           <ThemeProvider>
             <Typography variant="h6"><b>Cafeteria Management System</b></Typography>
             <Typography variant="body1">
@@ -187,11 +194,11 @@ function Project() {
         </Grid>
       </Grid>
 
-      <Grid container style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
-        <Grid item xs={12} sm={4} style={{ textAlign: "center" }} >
+      <Grid container  style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff", }}>
+        <Grid item xs={12} sm={4} style={{ textAlign: "center",  }} >
           <img src={TicTacToe} alt="bg Image" style={{ width: "200px" }} />
         </Grid>
-        <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
+        <Grid item xs={12} sm={8} style={{ padding: "10px", }}>
           <ThemeProvider>
             <Typography variant="h6"><b>Tic Tac Toe</b></Typography>
             <Typography variant="body1">
@@ -212,9 +219,9 @@ function Project() {
       </Grid>
 
 
-      <Grid container direction="row-reverse" style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
-        <Grid item xs={12} sm={4} style={{ textAlign: "center" }} >
-          <img src={SnakeGame} alt="bg Image"className={classes.image} style={{ width: "200px" }} />
+      <Grid container  direction="row-reverse" style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
+        <Grid item xs={12} sm={4} style={{ textAlign: "center", }} >
+          <img src={SnakeGame} alt="bg Image" className={classes.image} style={{ width: "200px" }} />
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
           <ThemeProvider>

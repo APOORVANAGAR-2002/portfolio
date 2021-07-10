@@ -15,14 +15,20 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Carousel from '../components/Carousel';
+import Carousel from '../components/carousel/Carousel1';
 import { Grid, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
+import CodeForCauseLogo from "../images/CodeForCauseLogo.jpg";
+import CodeChefLogo from "../images/CodeChefLogo.png";
+import Carousel1 from '../components/carousel/Carousel1';
+import Carousel2 from '../components/carousel/Carousel2';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
         // height: 500,
-        background: "#00A8E8",
+        background: "#000000",
+        color: "#ffffff",
         boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
     },
     media: {
@@ -36,11 +42,14 @@ const useStyles = makeStyles((theme) => ({
         transform: 'rotate(0deg)',
         marginLeft: 'auto',
         transition: theme.transitions.create('transform', {
-          duration: theme.transitions.duration.shortest,
+            duration: theme.transitions.duration.shortest,
         }),
     },
     expandOpen: {
         transform: 'rotate(180deg)',
+    },
+    subColor: {
+        color: '#ffffff'
     }
 }));
 
@@ -49,12 +58,6 @@ theme = responsiveFontSizes(theme);
 
 function Volunteer() {
     const classes = useStyles();
-    const [expanded, setExpanded] = useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
 
     return (
         <Grid container style={{ paddingBottom: "50px", justifyContent: "center" }}>
@@ -83,89 +86,106 @@ function Volunteer() {
             </Grid>
 
             <Grid container style={{ padding: "10px", }}>
-                <Grid item xs={12} sm={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item xs={12} sm={6} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
+                            style={{ background: "#000000" }}
                             avatar={
-                                <Avatar aria-label="recipe" className={classes.avatar}>
-                                    C
-                                </Avatar>
+                                <Avatar alt="CodeForCause" src={CodeForCauseLogo} />
                             }
-                            title="Code For Cause"
-                            subheader="Campus Ambassador"
+                            title={<Typography className={classes.subColor}>Code For Cause</Typography>}
+                            subheader={<Typography className={classes.subColor}>Campus Ambassador</Typography>}
                         />
                         <CardMedia>
-                            <Carousel />
+                            <Carousel1 />
                         </CardMedia>
                         <CardContent>
+                            <Typography variant="subtitle1">Sep 2020 - Present</Typography>
                             <Typography variant="body2" >
-                                This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                It has been a quite few months since being a part of this community. We routinely
+                                conduct sessions and webinars for fellow college mates.
                             </Typography>
                         </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} sm={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
-                    <Card className={classes.root}>
-                        <CardHeader
-                            avatar={
-                                <Avatar aria-label="recipe" className={classes.avatar}>
-                                    C
-                                </Avatar>
-                            }
-                            title="CodeChef MUST"
-                            subheader="Exwcutive Member"
-                        />
-                        <CardMedia>
-                            <Carousel />
-                        </CardMedia>
-
-                        <CardActions disableSpacing>
+                        {/* <CardActions disableSpacing >
                             <IconButton
                                 className={clsx(classes.expand, {
-                                    [classes.expandOpen]: expanded,
+                                    [classes.expandOpen]: expanded1,
                                 })}
-                                onClick={handleExpandClick}
-                                // aria-expanded={expanded}
+                                onClick={() => {
+                                    set
+                                }}
+                                aria-expanded={expanded1}
                                 aria-label="show more"
+                                style={{ margin: "auto" }}
+
                             >
                                 <ExpandMoreIcon />
                             </IconButton>
                         </CardActions>
-                        
-                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent>
+
+                        <Collapse in={expanded1} timeout="auto" unmountOnExit>
+                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
                                 <Typography variant="body2" >
                                     This impressive paella is a perfect party dish and a fun meal to cook together with your
                                     guests. Add 1 cup of frozen peas along with the mussels, if you like.
                                 </Typography>
                             </CardContent>
-                        </Collapse>
+                        </Collapse> */}
+
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item xs={12} sm={6} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
+                            style={{ background: "#000000" }}
                             avatar={
-                                <Avatar aria-label="recipe" className={classes.avatar}>
+                                <Avatar aria-label="CodeChef MUST" src={CodeChefLogo}>
                                     C
                                 </Avatar>
                             }
-                            title="Code For Cause"
-                            subheader="Campus Ambassador"
+                            title={<Typography className={classes.subColor}><b>CodeChef MUST</b></Typography>}
+                            subheader={<Typography className={classes.subColor}>Executive Member</Typography>}
                         />
                         <CardMedia>
-                            <Carousel />
+                            <Carousel2 />
                         </CardMedia>
+
                         <CardContent>
+                            <Typography variant="subtitle1">Nov 2020 - Present</Typography>
                             <Typography variant="body2" >
-                                This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                It has been a quite few months since being a part of this community. We routinely
+                                conduct sessions and webinars for fellow college mates.
                             </Typography>
                         </CardContent>
+
+                        {/* <CardActions disableSpacing >
+                            <IconButton
+                                className={clsx(classes.expand, {
+                                    [classes.expandOpen]: expanded2,
+                                })}
+                                onClick={handleExpandClick2}
+                                aria-expanded={expanded2}
+                                aria-label="show more"
+                                style={{ margin: "auto" }}
+
+                            >
+                                <ExpandMoreIcon />
+                            </IconButton>
+                        </CardActions>
+
+                        <Collapse in={expanded2} timeout="auto" unmountOnExit>
+                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
+                                <Typography variant="body2" >
+                                    This impressive paella is a perfect party dish and a fun meal to cook together with your
+                                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                </Typography>
+                            </CardContent>
+                        </Collapse> */}
                     </Card>
                 </Grid>
+
+
             </Grid>
 
         </Grid>

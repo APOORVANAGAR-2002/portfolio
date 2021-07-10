@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
@@ -8,6 +10,11 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import BootCamp from '../../images/assests/BootCamp.png';
+import OpenSource from '../../images/assests/OpenSource.png';
+import Git from '../../images/assests/Git.png';
+import DSA from '../../images/assests/DSA.png';
+import ML from '../../images/assests/ML.png';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -15,44 +22,45 @@ const tutorialSteps = [
   {
     label: '3 days Python BootCamp',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      `${BootCamp}`,
   },
   {
     label: 'Git & Github Workshop',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      `${Git}`,
   },
   {
-    label: 'Unfolding Opportunities with Open-Source',
+    label: 'Speaker Sessions',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      `${OpenSource}`,
   },
   {
-    label: 'Machine Learning BootCamp ~ Speaker Session',
+    label: 'Machine Learning BootCamp',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      `${ML}`,
   },
   {
     label: 'DSA Series',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      `${DSA}`,
   },
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
-        flexGrow: 1,
+    flexGrow: 1,
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     height: 50,
     paddingLeft: theme.spacing(4),
-    backgroundColor:"#00A8E8"
+    backgroundColor: "#ffffff",
+    // color: "#ffffff"
   },
   img: {
-    height: 255,
+    height: 200,
     display: 'block',
     maxWidth: 400,
     overflow: 'hidden',
@@ -60,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Carousel() {
+function Carousel1() {
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -97,11 +105,8 @@ function Carousel() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper style={{background: "#00A8E8"}}
-        steps={maxSteps}
-        position="static"
-        variant="text"
-        activeStep={activeStep}
+      <MobileStepper style={{ background: "#ffffff" }}
+        position="block"
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
             Next
@@ -119,4 +124,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default Carousel1;

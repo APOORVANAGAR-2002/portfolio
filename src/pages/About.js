@@ -9,11 +9,10 @@ import SocialMedia from "../components/SocialMedia";
 import ApoorvaNagar from "../images/Apoorva Nagar.png";
 import { Skills } from "./Skills";
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         background: '#00A8E8',
-        overflowX: 'hidden',
+        overflowX: 'hidden!important',
         paddingBottom: "50px"
     },
     heading: {
@@ -81,20 +80,21 @@ function About() {
         //     </Grid>
         // </Grid>
 
-        <Grid conatiner id="about" className={classes.root}>
+        <Grid conatiner id="about" className={classes.root} >
 
             <Grid container style={{ padding: "10px", textAlign: "center" }}>
                 <Grid item xs={12} >
                     <ThemeProvider theme={theme} >
-                        <Typography style={{
-                            fontFamily: 'Montserrat',
-                            fontStyle: 'normal',
-                            fontWeight: '900',
-                            color: 'rgba(255, 255, 255, 0.2)',
-                            lineHeight: '1px',
-                            paddingTop: "50px",
-                            marginLeft: "10px"
-                        }} variant="h1">ABOUT</Typography>
+                            <Typography style={{
+                                fontFamily: 'Montserrat',
+                                fontStyle: 'normal',
+                                fontWeight: '900',
+                                color: 'rgba(255, 255, 255, 0.2)',
+                                lineHeight: '1px',
+                                paddingTop: "50px",
+                                marginLeft: "10px"
+                            }} variant="h1">ABOUT</Typography>
+
                         <Typography style={{
                             fontFamily: 'comfortaa',
                             fontWeight: '500',
@@ -116,7 +116,7 @@ function About() {
                 }}>
                     <ThemeProvider theme={theme}>
 
-                        <Typography variant="body1" style={{ fontFamily: 'Poppins' }}>
+                        <Typography  variant="body1" style={{ fontFamily: 'Poppins' }}>
                             Hi, I am <b>Apoorva Nagar.</b>
                             <br />
                             I am an undergraduate Sophomore pursuing bachelor's in Computer Science.
@@ -134,6 +134,7 @@ function About() {
                         </Typography>
                     </ThemeProvider>
                 </Grid>
+
 
                 <Grid item xs={12} sm={4} style={{
                     // padding: "30px",

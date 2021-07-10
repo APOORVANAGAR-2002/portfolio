@@ -1,17 +1,16 @@
-import { makeStyles } from "@material-ui/core";
-import ApoorvaNagar from "../images/ApoorvaNagar.jpeg";
+// import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '300px',
-        height: '360px',
-        borderRadius: "50%",
-    }
-}));
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         width: '300px',
+//         height: '360px',
+//         borderRadius: "50%",
+//     }
+// }));
 
-export default function ProfileImage() {
+// export default function ProfileImage() {
 
-    const classes = useStyles();
+//     const classes = useStyles();
 
-    return (<img src={ApoorvaNagar} className={classes.root} alt="profile pic" />);
-}
+//     return (<img src={ApoorvaNagar} className={classes.root} alt="profile pic" />);
+// }
