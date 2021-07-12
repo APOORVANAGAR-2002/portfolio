@@ -4,6 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { SiGmail } from "react-icons/si";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,6 +51,16 @@ export default function SocialMedia() {
                 }}>
                     <LinkedInIcon />
                 </a>
+            </Avatar>
+            <Avatar className={classes.pink}>
+                <address>
+                <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" style={{
+                    textDecoration: "none",
+                    color: "inherit"
+                }}>
+                    <SiGmail />
+                </a>
+                </address>
             </Avatar>
         </div>
     );

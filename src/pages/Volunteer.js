@@ -93,7 +93,7 @@ function Volunteer() {
                             avatar={
                                 <Avatar alt="CodeForCause" src={CodeForCauseLogo} />
                             }
-                            title={<Typography className={classes.subColor}>Code For Cause</Typography>}
+                            title={<Typography className={classes.subColor}><b>Code For Cause</b></Typography>}
                             subheader={<Typography className={classes.subColor}>Campus Ambassador</Typography>}
                         />
                         <CardMedia>

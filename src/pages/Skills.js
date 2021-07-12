@@ -1,5 +1,5 @@
 import { createMuiTheme, Grid, makeStyles, responsiveFontSizes, ThemeProvider, Typography } from "@material-ui/core";
-import { DiCss3, DiGit, DiHtml5, DiJavascript1, DiPython, DiReact, DiGithubBadge } from "react-icons/di";
+import { DiCss3, DiGit, DiHtml5, DiJavascript1, DiPython, DiReact, DiGithubBadge, DiBootstrap } from "react-icons/di";
 import TechStacks from '../components/TechStacks';
 import Tilt from 'react-parallax-tilt';
 import '@fontsource/comfortaa';
@@ -137,16 +137,16 @@ function Skills() {
           <Grid item xs={4} sm={2} style={{
           }}>
             <Tilt glareEnable>
-              <DiGithubBadge fontSize="80px" color="#ffffff" />
+              <DiBootstrap fontSize="80px" color="#ffffff" />
             </Tilt>
           </Grid>
 
-          <Grid item xs={4} sm={2} style={{
+          {/* <Grid item xs={4} sm={2} style={{
           }}>
             <Tilt glareEnable>
               <DiGithubBadge fontSize="80px" color="#00A8E8" />
             </Tilt>
-          </Grid>
+          </Grid> */}
 
       </Grid>
 
