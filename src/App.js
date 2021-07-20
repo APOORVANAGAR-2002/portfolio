@@ -5,15 +5,17 @@ import { Skills } from "./pages/Skills";
 import { Volunteer } from "./pages/Volunteer";
 import { Footer } from "./pages/Footer";
 import { About } from "./pages/About";
+import { MainLayout } from "./layouts/MainLayout";
 
 function App() {
   return (
     <div>
+      <MainLayout />
        <Switch>
         <Route path="/" exact component={Home} />
-          <Route path="/project" component={Project} />
+          <Route path="/about" component={About} />
+        <Route path="/work" component={Project} />
         <Route path="/volunteer" component={Volunteer} />
-        <Route path="#about" component={About} />
         </Switch>
         {/* <Footer /> */}
     </div>

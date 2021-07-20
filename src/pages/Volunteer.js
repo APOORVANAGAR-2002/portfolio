@@ -60,7 +60,7 @@ function Volunteer() {
     const classes = useStyles();
 
     return (
-        <Grid container style={{ paddingBottom: "50px", justifyContent: "center" }}>
+        <Grid container style={{ minHeight: "100vh", display: "flex", justifyContent: "center" }}>
             <Grid container style={{ padding: "10px" }}>
                 <Grid item xs={12} >
                     <ThemeProvider theme={theme} >

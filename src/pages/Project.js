@@ -9,12 +9,14 @@ import AccessoriesSim from "../images/AccessoriesSim.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Skills } from "./Skills";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100vw",
+    // width: "100vw",
+    minHeight: "100vh",
     background: '#000000',
-    padding: "100px 20px",
+    padding: "20px",
     overflowX: 'hidden',
   },
   heading: {
@@ -112,7 +114,6 @@ function Project() {
     //     </Grid>
 
     // </Grid>
-
     <Grid container id="projects" style={{ paddingBottom: "50px", background: "#000000", overflowX: "hidden!important" }}>
 
       <Grid container style={{ padding: "10px" }}>
@@ -246,7 +247,7 @@ function Project() {
         </Grid>
       </Grid>
 
-    </Grid>
+      </Grid>
   )
 }
 

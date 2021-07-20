@@ -1,4 +1,4 @@
-import { Grid, makeStyles, Typography } from "@material-ui/core";
+import { Divider, Grid, makeStyles, Typography } from "@material-ui/core";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 // import { About } from "./About";
 import '@fontsource/comfortaa';
@@ -7,6 +7,8 @@ import { Skills } from "./Skills";
 import { Project } from "./Project";
 import { Volunteer } from "./Volunteer";
 import { Footer } from "./Footer";
+import { Intro } from "./Intro";
+import ParallaxComp from "../components/ParallaxComp";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -51,6 +53,8 @@ function Home() {
 
                 </Grid>
             </Grid>
+            <Intro />
+            {/* <ParallaxComp imgsrc={About}></ParallaxComp> */}
             <About />
             <Skills />
             <Project />
