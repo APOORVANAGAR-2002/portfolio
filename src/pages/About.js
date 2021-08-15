@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     },
     stepper: {
         width: "100%",
-        
+
     }
 }));
 
@@ -136,13 +136,19 @@ function About() {
                             lineHeight: '0px',
                             paddingTop: "50px",
                             // marginLeft: "10px"
+                            WebkitTextStroke: "0.5px rgba(255, 255, 255, 0.1)",
+                            // color: "#ffffff",
+                            // textShadow:
+                            //     "3px 3px 0 #000000",
+                            // textShadow: "-1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1)"
                         }} variant="h1">ABOUT</Typography>
 
                         <Typography style={{
                             fontFamily: 'comfortaa',
                             fontWeight: '500',
                             color: "#ffffff",
-                            marginLeft: "10px"
+                            marginLeft: "10px",
+                            WebkitTextStroke: "0.5px #ffffff",
                         }} variant="h3">Hi, It’s me :)</Typography>
                     </ThemeProvider>
                 </Grid>
@@ -198,7 +204,7 @@ function About() {
                 </Grid>
             </Grid>
 
-            <Grid container style={{padding:"10px"}}>
+            <Grid container style={{ padding: "10px" }}>
                 <Grid item xs={12} >
                     <ThemeProvider theme={theme} >
                         <Typography style={{
@@ -222,11 +228,11 @@ function About() {
 
                 <Grid item xs={12} >
                     <div className={classes.stepper} >
-                        <Stepper orientation="vertical" style={{background: '#00A8E8', color: '#ffffff'}}>
+                        <Stepper orientation="vertical" style={{ background: '#00A8E8', color: '#ffffff' }}>
                             {steps.map((label, index) => (
                                 <Step key={label} >
                                     <StepLabel icon={<BiRadioCircleMarked />} >
-                                        <Typography style={{color: "#ffffff"}}><b>{label}</b></Typography>
+                                        <Typography style={{ color: "#ffffff" }}><b>{label}</b></Typography>
                                     </StepLabel>
                                     <StepContent>
                                         <Typography variant='body1'>{getStepContent(index)}</Typography>

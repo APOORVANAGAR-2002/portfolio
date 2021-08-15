@@ -100,7 +100,7 @@ function Volunteer() {
                             <Carousel1 />
                         </CardMedia>
                         <CardContent>
-                            <Typography variant="subtitle1">Sep 2020 - Present</Typography>
+                            <Typography variant="subtitle1">Sep 2020 - Aug 2021</Typography>
                             <Typography variant="body2" >
                                 It has been a quite few months since being a part of this community. We routinely
                                 conduct sessions and webinars for fellow college mates.

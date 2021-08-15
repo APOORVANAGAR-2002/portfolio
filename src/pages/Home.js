@@ -8,7 +8,7 @@ import { Project } from "./Project";
 import { Volunteer } from "./Volunteer";
 import { Footer } from "./Footer";
 import { Intro } from "./Intro";
-import ParallaxComp from "../components/ParallaxComp";
+// import ParallaxComp from "../components/ParallaxComp";
 
 const useStyles = makeStyles((theme) => ({
     root: {
