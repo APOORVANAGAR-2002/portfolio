@@ -68,8 +68,9 @@ function Volunteer() {
                             fontFamily: 'Montserrat',
                             fontStyle: 'normal',
                             fontWeight: '900',
-                            color: 'rgba(0, 0, 0, 0.2)',
-                            lineHeight: '1px',
+                            color: 'rgba(0, 0, 0)',
+                            lineHeight: '20px',
+                            letterSpacing: "5px",
                             paddingTop: "50px",
                             marginLeft: "10px",
                             textAlign: 'center'

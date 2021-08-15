@@ -123,19 +123,20 @@ function Project() {
               fontFamily: 'Montserrat',
               fontStyle: 'normal',
               fontWeight: '900',
-              color: 'rgba(255, 255, 255, 0.2)',
-              lineHeight: '1px',
+              color: 'rgba(255, 255, 255)',
+              lineHeight: '55px',
+              letterSpacing: '5px',
               paddingTop: "50px",
               marginLeft: "10px",
               textAlign: 'center'
-            }} variant="h1">PROJECTS</Typography>
+            }} variant="h1">PROJECT</Typography>
             <Typography style={{
               fontFamily: 'comfortaa',
               fontWeight: '500',
               color: "#ffffff",
               marginLeft: "10px",
               textAlign: "center"
-            }} variant="h3">Sneek-peek to projects</Typography>
+            }} variant="h4">Sneek-peek to projects</Typography>
           </ThemeProvider>
         </Grid>
       </Grid>

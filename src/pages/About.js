@@ -132,11 +132,11 @@ function About() {
                             fontFamily: 'Montserrat',
                             // fontStyle: 'normal',
                             fontWeight: '900',
-                            color: 'rgba(255, 255, 255, 0.2)',
-                            lineHeight: '0px',
+                            color: 'rgba(255, 255, 255)',
+                            lineHeight: '60px',
                             paddingTop: "50px",
+                            letterSpacing: "15px"
                             // marginLeft: "10px"
-                            WebkitTextStroke: "0.5px rgba(255, 255, 255, 0.1)",
                             // color: "#ffffff",
                             // textShadow:
                             //     "3px 3px 0 #000000",
@@ -149,7 +149,7 @@ function About() {
                             color: "#ffffff",
                             marginLeft: "10px",
                             WebkitTextStroke: "0.5px #ffffff",
-                        }} variant="h3">Hi, It’s me :)</Typography>
+                        }} variant="h4">Hi, It’s me :)</Typography>
                     </ThemeProvider>
                 </Grid>
             </Grid>
@@ -212,7 +212,8 @@ function About() {
                             fontStyle: 'normal',
                             fontWeight: '900',
                             color: 'rgba(255, 255, 255, 0.2)',
-                            lineHeight: '0px',
+                            lineHeight: '30px',
+                            letterSpacing: "5px",
                             paddingTop: "50px",
                             marginLeft: "10px"
                         }} variant="h2">ACADEMICS</Typography>

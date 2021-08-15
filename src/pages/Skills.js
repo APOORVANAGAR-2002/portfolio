@@ -61,8 +61,9 @@ function Skills() {
               fontFamily: 'Montserrat',
               fontStyle: 'normal',
               fontWeight: '900',
-              color: 'rgba(0, 168, 232, 0.2)',
-              lineHeight: '1px',
+              color: 'rgba(0, 168, 232)',
+              lineHeight: '55px',
+              letterSpacing: "15px",
               paddingTop: "50px",
               marginLeft: "10px",
               textAlign: 'center',
@@ -75,7 +76,7 @@ function Skills() {
               marginLeft: "10px",
               textAlign: "center",
               WebkitTextStroke: "0.5px #00A8E8",
-            }} variant="h3">Known tech-stacks</Typography>
+            }} variant="h4">Known tech-stacks</Typography>
           </ThemeProvider>
         </Grid>
       </Grid>

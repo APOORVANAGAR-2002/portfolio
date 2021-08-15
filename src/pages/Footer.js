@@ -36,19 +36,20 @@ function Footer() {
                             fontFamily: 'Montserrat',
                             fontStyle: 'normal',
                             fontWeight: '900',
-                            color: 'rgba(255, 255, 255, 0.2)',
-                            lineHeight: '1px',
+                            color: 'rgba(255, 255, 255)',
+                            lineHeight: '60px',
+                            letterSpacing: "7px",
                             paddingTop: "50px",
                             marginLeft: "10px",
                             textAlign: 'center'
-                        }} variant="h1">CONNECT</Typography>
+                        }} variant="h1">SOCIALS</Typography>
                         <Typography style={{
                             fontFamily: 'comfortaa',
                             fontWeight: '500',
                             color: "#ffffff",
                             marginLeft: "10px",
                             textAlign: "center"
-                        }} variant="h3">Reach out here..</Typography>
+                        }} variant="h4">Reach out here..</Typography>
                     </ThemeProvider>
                 </Grid>
                 <Grid item xs={12} style={{
