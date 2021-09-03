@@ -1,20 +1,15 @@
-import { Button, Grid, makeStyles, Paper, Step, StepContent, StepLabel, Stepper, Typography } from "@material-ui/core";
-import ProfileImage from "../components/ProfileImage";
-import ProfileContent from "../components/ProfileContent";
+import { Grid, makeStyles, Step, StepContent, StepLabel, Stepper, Typography } from "@material-ui/core";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import '@fontsource/comfortaa';
 import "@fontsource/montserrat";
 import "@fontsource/poppins";
 import SocialMedia from "../components/SocialMedia";
 import ApoorvaNagar from "../images/Apoorva Nagar.png";
-import { Skills } from "./Skills";
-import { useState } from "react";
 import { BiRadioCircleMarked } from "react-icons/bi";
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        minHeight: '100vh',
+        // minHeight: '100vh',
         background: '#00A8E8',
         overflowX: 'hidden!important',
         // paddingBottom: "50px"
@@ -123,12 +118,11 @@ function About() {
         //     </Grid>
         // </Grid>
 
-        <Grid conatiner id="about" className={classes.root} >
-
-            <Grid container style={{ padding: "10px", textAlign: "center" }}>
+        <Grid container id="about" className={classes.root} >
+            <Grid container style={{ textAlign: "center" }}>
                 <Grid item xs={12} >
                     <ThemeProvider theme={theme} >
-                        <Typography style={{
+                        {/* <Typography style={{
                             fontFamily: 'Montserrat',
                             // fontStyle: 'normal',
                             fontWeight: '900',
@@ -141,110 +135,122 @@ function About() {
                             // textShadow:
                             //     "3px 3px 0 #000000",
                             // textShadow: "-1px -1px 0 rgba(255, 255, 255, 0.1), 1px -1px 0 rgba(255, 255, 255, 0.1)"
-                        }} variant="h1">ABOUT</Typography>
+                        }} variant="h1">ABOUT</Typography> */}
 
                         <Typography style={{
                             fontFamily: 'comfortaa',
                             fontWeight: '500',
                             color: "#ffffff",
                             marginLeft: "10px",
-                            WebkitTextStroke: "0.5px #ffffff",
-                        }} variant="h4">Hi, It’s me :)</Typography>
+                            // WebkitTextStroke: "0.5px #ffffff",
+                            paddingTop: "20px"
+                        }} variant="h2">Hi, It’s me :)</Typography>
                     </ThemeProvider>
                 </Grid>
             </Grid>
 
-
-            <Grid container >
-                <Grid item xs={12} sm={8} style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    padding: "20px",
-                    textAlign: "left"
-                }}>
-                    <ThemeProvider theme={theme}>
-
-                        <Typography variant="body2" style={{ fontFamily: 'Poppins' }}>
-                            Hi, I am <b>Apoorva Nagar.</b>
-                            <br />
-                            I am an undergraduate pre-final year student pursuing a bachelor's degree
-                            in Computer Science and Engineering. I have an interest in web development,
-                            particularly in the front-end. I am familiar with few programming languages
-                            and frameworks like C, Python, JavaScript, BootStrap etc.
-                            <br />
-                            Apart from these,I also relish exploring other domains such as virtual reality and machine learning.
-                            As a part of various student programs, I like empowering tech cultures amongst my
-                            peers.
-                            <br />
-                            Besides these, I adore painting as my hobby.
-                            <br />
-                            {/* <ul>
+            <Grid container style={{
+                display: 'flex',
+                flexDirection: 'column',
+                minHeight: "100vh"
+            }}>
+                <Grid container>
+               
+                    <Grid item xs={12} sm={8} style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        padding: "20px",
+                        textAlign: "left"
+                    }}>
+                        <ThemeProvider theme={theme}>
+                            <Typography variant="body2" style={{
+                                fontFamily: 'Poppins',
+                                // display: 'flex',
+                                // flexDirection: 'column',
+                                // justifyContent: 'flex-start'
+                            }}>
+                                Hi, I am <b>Apoorva Nagar.</b>
+                                <br />
+                                I am an undergraduate pre-final year student pursuing a bachelor's degree
+                                in Computer Science and Engineering. I have an interest in web development,
+                                particularly in the front-end. I am familiar with few programming languages
+                                and frameworks like C, Python, JavaScript, BootStrap etc.
+                                <br />
+                                Apart from these,I also relish exploring other domains such as virtual reality and machine learning.
+                                As a part of various student programs, I like empowering tech cultures amongst my
+                                peers. I am currently serving as a lead for Google Developer Student Clubs MUST.
+                                <br />
+                                Besides these, I adore painting as my hobby.
+                                <br />
+                                {/* <ul>
                                 <li>Campus ambassador for CodeForCause</li>
                                 <li>Executive team member for CodeChef college chapter MUST.</li>
                             </ul> */}
-                            <br />
-                            <b>Wanna connect? </b>Here are my social media handles.
-                            <SocialMedia />
-                        </Typography>
-                    </ThemeProvider>
+                                <br />
+                                <b>Wanna connect? </b>Here are my social media handles.
+                                <SocialMedia />
+                            </Typography>
+                        </ThemeProvider>
+                    </Grid>
+
+
+                    <Grid item xs={12} sm={4} style={{
+                        // padding: "30px",
+                        // display: "flex",
+                        // justifyContent: "center",
+                        // alignItems: "center"
+                        textAlign: "center",
+                        padding: "20px",
+
+                    }}>
+                        <img src={ApoorvaNagar} className={classes.image} alt="avatar" />
+                    </Grid>
+                </Grid>
+                <Grid container style={{ padding: "10px" }}>
+                    <Grid item xs={12} >
+                        <ThemeProvider theme={theme} >
+                            <Typography style={{
+                                fontFamily: 'Montserrat',
+                                fontStyle: 'normal',
+                                fontWeight: '900',
+                                color: 'rgba(255, 255, 255, 0.2)',
+                                lineHeight: '30px',
+                                letterSpacing: "5px",
+                                paddingTop: "50px",
+                                marginLeft: "10px"
+                            }} variant="h2">ACADEMICS</Typography>
+
+                            <Typography style={{
+                                fontFamily: 'comfortaa',
+                                fontWeight: '500',
+                                color: "#ffffff",
+                                marginLeft: "10px"
+                            }} variant="h4">Education</Typography>
+                        </ThemeProvider>
+                    </Grid>
+
+                    <Grid item xs={12} >
+                        <div className={classes.stepper} >
+                            <Stepper orientation="vertical" style={{ background: '#00A8E8', color: '#ffffff' }}>
+                                {steps.map((label, index) => (
+                                    <Step key={label} >
+                                        <StepLabel icon={<BiRadioCircleMarked />} >
+                                            <Typography style={{ color: "#ffffff" }}><b>{label}</b></Typography>
+                                        </StepLabel>
+                                        <StepContent>
+                                            <Typography variant='body1'>{getStepContent(index)}</Typography>
+                                            <Typography variant='subtitle2'>2019 - Present</Typography>
+                                        </StepContent>
+                                    </Step>
+                                ))}
+                            </Stepper>
+                        </div>
+                    </Grid>
                 </Grid>
 
-
-                <Grid item xs={12} sm={4} style={{
-                    // padding: "30px",
-                    // display: "flex",
-                    // justifyContent: "center",
-                    // alignItems: "center"
-                    textAlign: "center",
-                    padding: "40px",
-
-                }}>
-                    <img src={ApoorvaNagar} className={classes.image} alt="avatar" />
-                </Grid>
             </Grid>
 
-            <Grid container style={{ padding: "10px" }}>
-                <Grid item xs={12} >
-                    <ThemeProvider theme={theme} >
-                        <Typography style={{
-                            fontFamily: 'Montserrat',
-                            fontStyle: 'normal',
-                            fontWeight: '900',
-                            color: 'rgba(255, 255, 255, 0.2)',
-                            lineHeight: '30px',
-                            letterSpacing: "5px",
-                            paddingTop: "50px",
-                            marginLeft: "10px"
-                        }} variant="h2">ACADEMICS</Typography>
-
-                        <Typography style={{
-                            fontFamily: 'comfortaa',
-                            fontWeight: '500',
-                            color: "#ffffff",
-                            marginLeft: "10px"
-                        }} variant="h4">Education</Typography>
-                    </ThemeProvider>
-                </Grid>
-
-                <Grid item xs={12} >
-                    <div className={classes.stepper} >
-                        <Stepper orientation="vertical" style={{ background: '#00A8E8', color: '#ffffff' }}>
-                            {steps.map((label, index) => (
-                                <Step key={label} >
-                                    <StepLabel icon={<BiRadioCircleMarked />} >
-                                        <Typography style={{ color: "#ffffff" }}><b>{label}</b></Typography>
-                                    </StepLabel>
-                                    <StepContent>
-                                        <Typography variant='body1'>{getStepContent(index)}</Typography>
-                                        <Typography variant='subtitle2'>2019 - Present</Typography>
-                                    </StepContent>
-                                </Step>
-                            ))}
-                        </Stepper>
-                    </div>
-                </Grid>
-            </Grid>
         </Grid>
 
     )
