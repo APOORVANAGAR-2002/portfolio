@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Carousel from '../components/carousel/Carousel1';
 import { Grid, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 import CodeForCauseLogo from "../images/CodeForCauseLogo.jpg";
 import CodeChefLogo from "../images/CodeChefLogo.png";
 import Carousel1 from '../components/carousel/Carousel1';
 import Carousel2 from '../components/carousel/Carousel2';
-
+import GDSCLogo from '../images/GDSC Logo.png';
+import Carousel3 from '../components/carousel/Carousel3';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
     },
     subColor: {
         color: '#ffffff'
+    },
+    subHeader: {
+        color: '#ffffff',
+        fontWeight: 'light'
     }
 }));
 
@@ -86,8 +82,11 @@ function Volunteer() {
                 </Grid>
             </Grid>
 
-            <Grid container style={{ padding: "10px", }}>
-                <Grid item xs={12} sm={6} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+            <Grid container style={{
+                padding: "10px",
+                justifyContent: 'center'
+            }}>
+                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
                             style={{ background: "#000000" }}
@@ -95,17 +94,15 @@ function Volunteer() {
                                 <Avatar alt="CodeForCause" src={CodeForCauseLogo} />
                             }
                             title={<Typography className={classes.subColor}><b>Code For Cause</b></Typography>}
-                            subheader={<Typography className={classes.subColor}>Campus Ambassador</Typography>}
+                            subheader={<Typography variant="subtitle2" className={classes.subHeader}>Campus Ambassador</Typography>}
                         />
                         <CardMedia>
                             <Carousel1 />
                         </CardMedia>
                         <CardContent>
                             <Typography variant="subtitle1">Sep 2020 - Aug 2021</Typography>
-                            <Typography variant="body2" >
-                                It has been a quite few months since being a part of this community. We routinely
-                                conduct sessions and webinars for fellow college mates.
-                            </Typography>
+                            <Typography variant="body2">
+                            Delivered multiple sessions teaching DSA, tools like Git & GitHub and organising monthly empowerment series receiving participation of more than 30 students across all events.                            </Typography>
                         </CardContent>
                         {/* <CardActions disableSpacing >
                             <IconButton
@@ -136,7 +133,7 @@ function Volunteer() {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
                             style={{ background: "#000000" }}
@@ -146,7 +143,7 @@ function Volunteer() {
                                 </Avatar>
                             }
                             title={<Typography className={classes.subColor}><b>CodeChef MUST</b></Typography>}
-                            subheader={<Typography className={classes.subColor}>Executive Member</Typography>}
+                            subheader={<Typography variant="subtitle2" className={classes.subHeader}>Executive Member</Typography>}
                         />
                         <CardMedia>
                             <Carousel2 />
@@ -155,8 +152,8 @@ function Volunteer() {
                         <CardContent>
                             <Typography variant="subtitle1">Nov 2020 - Present</Typography>
                             <Typography variant="body2" >
-                                It has been a quite few months since being a part of this community. We routinely
-                                conduct sessions and webinars for fellow college mates.
+                            Delivered sessions teaching Competitive Programming topics in Code Chef MUST initiatives of 
+                            ‘Kaizen’ and ‘Incipience’ receiving participation of over 40 students.
                             </Typography>
                         </CardContent>
 
@@ -183,6 +180,55 @@ function Volunteer() {
                                 </Typography>
                             </CardContent>
                         </Collapse> */}
+                    </Card>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                    <Card className={classes.root}>
+                        <CardHeader
+                            style={{ background: "#000000" }}
+                            avatar={
+                                <Avatar alt="CodeForCause" src={GDSCLogo} />
+                            }
+                            title={<Typography className={classes.subColor}><b>Google Developer Student Clubs</b></Typography>}
+                            subheader={<Typography variant="subtitle2" className={classes.subHeader}>GDSC Lead</Typography>}
+                        />
+                        <CardMedia>
+                            <Carousel3 />
+                        </CardMedia>
+                        <CardContent>
+                            <Typography variant="subtitle1">July 2020 - Present</Typography>
+                            <Typography variant="body2" >
+                                GDSC's are university-based community groups for students, intended to be a platform for students to learn and collaborate as they solve problems around
+                                them with the help of technology.
+                            </Typography>
+                        </CardContent>
+                        {/* <CardActions disableSpacing >
+                            <IconButton
+                                className={clsx(classes.expand, {
+                                    [classes.expandOpen]: expanded1,
+                                })}
+                                onClick={() => {
+                                    set
+                                }}
+                                aria-expanded={expanded1}
+                                aria-label="show more"
+                                style={{ margin: "auto" }}
+
+                            >
+                                <ExpandMoreIcon />
+                            </IconButton>
+                        </CardActions>
+
+                        <Collapse in={expanded1} timeout="auto" unmountOnExit>
+                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
+                                <Typography variant="body2" >
+                                    This impressive paella is a perfect party dish and a fun meal to cook together with your
+                                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                                </Typography>
+                            </CardContent>
+                        </Collapse> */}
+
                     </Card>
                 </Grid>
 

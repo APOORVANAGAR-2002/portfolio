@@ -6,8 +6,10 @@ const useStyles = makeStyles((theme) => ({
     root: {
         background: "#000000",
         color: "#ffffff",
-        padding: "100px 10px 100px 10px",
-        fontFamily: "poppins"
+        padding: "100px 8px 100px 8px",
+        fontFamily: "poppins",
+        border: '2px solid #ffffff',
+        borderRadius: '40px'
     }
 }))
 
