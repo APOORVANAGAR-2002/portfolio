@@ -1,19 +1,26 @@
-import { Divider, List, ListItem, ListItemIcon, ListItemText, makeStyles } from "@material-ui/core";
+import { List, ListItem, ListItemIcon, ListItemText, makeStyles } from "@material-ui/core";
 import WorkIcon from '@material-ui/icons/Work';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
-import BuildIcon from '@material-ui/icons/Build';
 import { useHistory } from "react-router";
 import "@fontsource/poppins";
 import { Typography } from "@material-ui/core";
+import { FaHandsHelping } from "react-icons/fa";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        Width: 260,
+        width: 240,
+        height: '97vh',
         backgroundColor: "#000000",
         color: '#EAE0D5',
-        fontFamily: 'Poppins'
+        fontFamily: 'Poppins',
+        display: 'flex',
+        flexDirection: 'column',
+        // justifyContent: 'center',
+        overflowY: 'hidden!important',
     },
+    listItem: {
+        
+    }
 }));
 
 export default function SideDrawer({ setDrawerOpen }) {
@@ -22,54 +29,40 @@ export default function SideDrawer({ setDrawerOpen }) {
     const history = useHistory();
 
     return (
-        <div className={classes.root}>
-            <List component="nav" aria-label="main mailbox folders">
+        <div>
+            <List component="nav" className={classes.root}>
 
-                <Typography variant="h5">Navbar</Typography>
+                {/* <Typography variant="h5">Navbar</Typography> */}
 
-                <ListItem button onClick={() => {
+                <ListItem button className={classes.listItem } onClick={() => {
                     history.push("/about");
                     setDrawerOpen(false);
                 }}>
                     <ListItemIcon>
-                        <AccountCircleIcon />
+                        <AccountCircleIcon style={{ color: '#EAE0D5', padding: '10px' }} />
                     </ListItemIcon>
-                    <ListItemText primary="About" />
+                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>About</ListItemText>
                 </ListItem>
 
 
                 <ListItem button onClick={() => {
-                    history.push("/drafts");
+                    history.push("/work");
                     setDrawerOpen(false);
                 }} >
                     <ListItemIcon>
-                        <BuildIcon />
+                        <WorkIcon style={{ color: '#EAE0D5', padding: '10px' }} />
                     </ListItemIcon>
-                    <ListItemText primary="Skills" />
+                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>Work</ListItemText>
                 </ListItem>
 
-
-
                 <ListItem button onClick={() => {
-                    history.push("/login");
+                    history.push("/volunteer");
                     setDrawerOpen(false);
                 }} >
                     <ListItemIcon>
-                        <WbIncandescentIcon />
+                        <FaHandsHelping style={{color: '#EAE0D5', padding: '10px', fontSize: '25px'}} />
                     </ListItemIcon>
-                    <ListItemText primary="Projects" />
-                </ListItem>
-
-
-
-                <ListItem button onClick={() => {
-                    history.push("/login");
-                    setDrawerOpen(false);
-                }} >
-                    <ListItemIcon>
-                        <WorkIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Volunteering" />
+                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>Volunteer</ListItemText>
                 </ListItem>
 
             </List>
