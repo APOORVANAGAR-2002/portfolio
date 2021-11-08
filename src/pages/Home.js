@@ -8,6 +8,7 @@ import { Project } from "./Project";
 import { Volunteer } from "./Volunteer";
 import { Footer } from "./Footer";
 import { Intro } from "./Intro";
+import "typeface-roboto";
 // import ParallaxComp from "../components/ParallaxComp";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 10, 0.60), rgba(10, 0, 0, 0.75)), url(/image/background.png)",
+        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 10, 0.60), rgba(10, 0, 0, 0.75)), url(/image/bgImage.jpg)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -25,12 +26,17 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: "50px"
     },
     home: {
-        padding: "20px"
+        padding: "5rem"
     },
     heading: {
-        fontFamily: "comfortaa",
-        fontWeight: "500",
-        color: '#EAE0D5',
+        fontFamily: "roboto",
+        fontWeight: "700",
+        color: '#E5E5E5',
+    },
+    subHeading: {
+        fontFamily: "roboto",
+        fontWeight: "300",
+        color: '#F2EBEB',
     }
 }));
 
@@ -47,8 +53,8 @@ function Home() {
             <Grid container className={classes.root}>
                 <Grid item xs={12} className={classes.home}>
                     <ThemeProvider theme={theme}>
-                        <Typography className={classes.heading} variant="h5">Hi there..<span className="wave">👋🏻</span></Typography>
-                        <Typography className={classes.heading} variant="h2">I'm Apoorva Nagar!!</Typography>
+                        <Typography className={classes.heading} variant="h1">Hi there!</Typography>
+                        <Typography className={classes.subHeading} variant="h4">I am Apoorva Nagar</Typography>
                     </ThemeProvider>
 
                 </Grid>
