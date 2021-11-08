@@ -1,15 +1,12 @@
-import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
-import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import "@fontsource/poppins";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        background: "#000000",
-        color: "#ffffff",
-        padding: "100px 8px 100px 8px",
+        color: "#000000",
+        padding: "2rem",
         fontFamily: "poppins",
-        border: '2px solid #ffffff',
-        borderRadius: '40px'
     }
 }))
 
@@ -18,7 +15,7 @@ function Intro() {
     const classes = useStyles();
     return (
         <Grid container className={classes.root}>
-            <Grid item xs={12} style={{ display: "flex",justifyContent: "center", padding: "10px"}}>
+            {/* <Grid item xs={12} style={{ display: "flex",justifyContent: "center", padding: "10px"}}>
                 <Typography component="div">
                     <Box fontStyle="italic" fontSize="h6.fontSize">
                         <FormatQuoteIcon fontSize='large' />Nothing liberates our greatness like the desire to help, the desire to serve.
@@ -30,16 +27,20 @@ function Intro() {
                     </Box>
                 </Typography>
             </Grid>
+ */}
 
-            <Grid item xs={12} style={{display: "flex", justifyContent: "center", padding: "10px"}}>
-                <Typography variant="h6" style={{ textAlign: "center", fontWeight: "100" }}>
+            <FaQuoteLeft fontSize='30px' />
+            <Grid item xs={12} style={{
+                display: "flex", justifyContent: "center", padding: "10px"
+            }}>
+                <Typography variant="h5" align="center" style={{ opacity: '68%' }}>
                     I believe in empowering communities and be an impact for good, dedicated to
                     contributing to the community and fostering tech culture.
                 </Typography>
             </Grid>
         </Grid>
     );
-    
+
 }
 
 export { Intro };
