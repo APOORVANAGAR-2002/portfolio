@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: "50px"
     },
     home: {
-        padding: "5rem"
+        padding: "10%"
     },
     heading: {
         fontFamily: "roboto",

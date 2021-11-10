@@ -13,12 +13,9 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
         },
     },
-    pink: {
-        color: theme.palette.getContrastText(pink[500]),
-        backgroundColor: pink[700],
-        width: theme.spacing(5),
-        height: theme.spacing(5),
-    },
+    icon: {
+        background: '#006E69'
+    }
 
 }));
 
@@ -28,7 +25,7 @@ export default function SocialMedia() {
 
     return (
         <div className={classes.root}>
-            <Avatar className={classes.pink}>
+            <Avatar className={classes.icon}>
                 <a href="https://twitter.com/nagar248" target="_blank" style={{
                     textDecoration: "none",
                     color: "inherit"
@@ -36,7 +33,7 @@ export default function SocialMedia() {
                     <TwitterIcon />
                 </a>
             </Avatar>
-            <Avatar className={classes.pink}>
+            <Avatar className={classes.icon}>
                 <a href="https://github.com/APOORVANAGAR-2002" target="_blank" style={{
                     textDecoration: "none",
                     color: "inherit"
@@ -44,7 +41,7 @@ export default function SocialMedia() {
                     <GitHubIcon />
                 </a>
             </Avatar>
-            <Avatar className={classes.pink}>
+            <Avatar className={classes.icon}>
                 <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" style={{
                     textDecoration: "none",
                     color: "inherit"
@@ -52,7 +49,7 @@ export default function SocialMedia() {
                     <LinkedInIcon />
                 </a>
             </Avatar>
-            <Avatar className={classes.pink}>
+            <Avatar className={classes.icon}>
                 <address>
                 <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" style={{
                     textDecoration: "none",
