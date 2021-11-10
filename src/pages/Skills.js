@@ -17,9 +17,13 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "comfortaa",
     color: '#00A8E8',
   },
-  // icons: {
-  //   border: "2px solid #000000"
-  // }
+  icons: {
+    border: "2px dashed #000000",
+    borderRadius: '20px',
+    textAlign: 'center',
+    margin: '0.5%',
+
+  }
 }));
 
 let theme = createMuiTheme();
@@ -31,120 +35,78 @@ function Skills() {
   const classes = useStyles();
 
   return (
-    // <Grid container spacing={5} className={classes.root}>
 
-    //     <Grid item xs={12} className={classes.heading}>
-    //         <Typography style={{
-    //             fontFamily: 'Montserrat',
-    //             fontStyle: 'normal',
-    //             fontWeight: '900',
-    //             color: 'rgba(0, 168, 232, 0.2)',
-    //             lineHeight: '1px'
-    //         }} variant="h1">SKILLS</Typography>
-    //         <Typography style={{
-    //             fontFamily: 'comfortaa',
-    //             fontWeight: '500'
-    //         }} variant="h3">Known tech-stacks</Typography>
-    //     </Grid>
-    //     <Grid item>
-    //         <TechStacks />
-    //     </Grid>
-
-    // </Grid>
-
-    <Grid container style={{ justifyContent: "center", paddingBottom: "50px", background: "#000000" }}>
+    <Grid container style={{ padding: "2%" }}>
 
       <Grid container style={{ padding: "10px" }}>
         <Grid item xs={12} >
           <ThemeProvider theme={theme} >
-            <Typography style={{
-              fontFamily: 'Montserrat',
-              fontStyle: 'normal',
-              fontWeight: '900',
-              color: 'rgba(0, 168, 232)',
-              lineHeight: '55px',
-              letterSpacing: "15px",
-              paddingTop: "50px",
-              marginLeft: "10px",
-              textAlign: 'center',
-              WebkitTextStroke: "0.5px rgba(0, 168, 232, 0.2)",
-            }} variant="h1">SKILLS</Typography>
-            <Typography style={{
-              fontFamily: 'comfortaa',
-              fontWeight: '500',
-              color: "#00A8E8",
-              marginLeft: "10px",
-              textAlign: "center",
-              WebkitTextStroke: "0.5px #00A8E8",
-            }} variant="h4">Known tech-stacks</Typography>
+            <Typography align='center' style={{
+              fontFamily: 'roboto',
+              fontWeight: '700',
+              color: "#000000",
+              paddingTop: "20px"
+            }} variant="h2">Skills</Typography>
+            <Typography align='center' variant="h5" style={{ opacity: '68%' }}>Known tech-stacks</Typography>
           </ThemeProvider>
         </Grid>
       </Grid>
 
-      <Grid container style={{ justifyContent: "center", textAlign: "center", padding: "10px" }}>
+      <Grid container style={{ justifyContent: "center", padding: "4%" }}>
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiPython fontSize="80px" color="#00A8E8" />
-            </Tilt>
-
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiPython fontSize="80px" color="#006E69" />
+          </Tilt>
+        </Grid>
 
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiReact fontSize="80px" color="#ffffff" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiReact fontSize="80px" color="#000000" />
+          </Tilt>
+        </Grid>
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiHtml5 fontSize="80px" color="#00A8E8" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiHtml5 fontSize="80px" color="#006E69" />
+          </Tilt>
+        </Grid>
 
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiCss3 fontSize="80px" color="#ffffff" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiCss3 fontSize="80px" color="#000000" />
+          </Tilt>
+        </Grid>
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiJavascript1 fontSize="80px" color="#00A8E8" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiJavascript1 fontSize="80px" color="#006E69" />
+          </Tilt>
+        </Grid>
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiGit fontSize="80px" color="#ffffff" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2}className={classes.icons}>
+          <Tilt glareEnable>
+            <DiGit fontSize="80px" color="#000000" />
+          </Tilt>
+        </Grid>
 
 
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiGithubBadge fontSize="80px" color="#00A8E8" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiGithubBadge fontSize="80px" color="#006E69" />
+          </Tilt>
+        </Grid>
 
-          <Grid item xs={4} sm={2} style={{
-          }}>
-            <Tilt glareEnable>
-              <DiBootstrap fontSize="80px" color="#ffffff" />
-            </Tilt>
-          </Grid>
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiBootstrap fontSize="80px" color="#000000" />
+          </Tilt>
+        </Grid>
 
-          {/* <Grid item xs={4} sm={2} style={{
+        {/* <Grid item xs={4} sm={2} style={{
           }}>
             <Tilt glareEnable>
               <DiGithubBadge fontSize="80px" color="#00A8E8" />
