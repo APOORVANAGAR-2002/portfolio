@@ -1,13 +1,10 @@
-import { Divider, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
-// import { About } from "./About";
 import '@fontsource/comfortaa';
-import { About } from "./About";
-import { Skills } from "./Skills";
-import { Project } from "./Project";
-import { Volunteer } from "./Volunteer";
-import { Footer } from "./Footer";
-import { Intro } from "./Intro";
+import { About } from "../components/homepage/About";
+import { Skills } from "../components/homepage/Skills";
+import { Footer } from "../components/homepage/Footer";
+import { Intro } from "../components/homepage/Intro";
 import "typeface-roboto";
 // import ParallaxComp from "../components/ParallaxComp";
 
@@ -63,8 +60,6 @@ function Home() {
             {/* <ParallaxComp imgsrc={About}></ParallaxComp> */}
             <About />
             <Skills />
-            <Project />
-            <Volunteer />
             <Footer />
         </div>
 

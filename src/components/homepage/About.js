@@ -3,8 +3,8 @@ import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui
 import '@fontsource/comfortaa';
 import "@fontsource/montserrat";
 import "@fontsource/poppins";
-import SocialMedia from "../components/SocialMedia";
-import ApoorvaNagar from "../images/Apoorva Nagar.png";
+import SocialMedia from "../SocialMedia";
+import ApoorvaNagar from "../../images/Apoorva Nagar.png";
 import { BiRadioCircleMarked } from "react-icons/bi";
 import "typeface-roboto";
 
@@ -16,13 +16,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        // alignItems: 'center',
-        // minHeight: '100vh'
     },
     image: {
-        // width: "250px",
-        // borderRadius: "50%",
-        // border: "10px solid #000000"
         width: "200px",
         borderRadius: "30px",
     },
@@ -82,33 +77,14 @@ function About() {
     return (
 
         <Grid container id="about" className={classes.root} >
-            {/* <Grid container style={{ textAlign: "center" }}>
-                <Grid item xs={12} >
-                    <ThemeProvider theme={theme} >
-                        <Typography style={{
-                            fontFamily: 'roboto',
-                            fontWeight: '700',
-                            color: "#006E69",
-                            paddingTop: "20px"
-                        }} variant="h2">It’s me</Typography>
-                        <Typography variant="h5" style={{opacity: '68%'}}>Sub-heading</Typography>
-                    </ThemeProvider>
-                </Grid>
-            </Grid>
- */}
             <Grid container style={{
-                    // display: 'flex',
-                    // flexDirection: 'column',
-                    // // minHeight: "100vh"
                 padding: '5%'
             }}>
                 <Grid item xs={12} sm={5} style={{
-                        // padding: "30px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
                         textAlign: "center",
-                        // padding: "2%",
 
                     }}>
                         <img src={ApoorvaNagar} className={classes.image} alt="avatar" />
@@ -126,9 +102,6 @@ function About() {
                             <br />
                             <Typography variant="body1" style={{
                                 fontFamily: 'roboto',
-                                // display: 'flex',
-                                // flexDirection: 'column',
-                                // justifyContent: 'flex-start'
                             }}>
                                 Hi, I am Apoorva Nagar.
                                 <br />
