@@ -9,25 +9,16 @@ import AccessoriesSim from "../images/AccessoriesSim.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Skills } from "./Skills";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // width: "100vw",
     minHeight: "100vh",
     background: '#000000',
     padding: "20px",
     overflowX: 'hidden',
   },
-  heading: {
-    textAlign: 'center',
-    fontFamily: "comfortaa",
-    color: '#ffffff',
-  },
-  image: {
-    '&: hover': {
-      background: "#f00000",
-    }
+  images: {
+    width: '200px'
   }
 }));
 
@@ -43,100 +34,18 @@ function Project() {
   }, []);
 
   return (
-    // <Grid container className={classes.root}>
-
-    //     <Grid item xs={12} className={classes.heading}>
-    //         <Typography style={{
-    //             fontFamily: 'Montserrat',
-    //             fontStyle: 'normal',
-    //             fontWeight: '900',
-    //             color: 'rgba(255, 255, 255, 0.2)',
-    //             lineHeight: '1px'
-    //         }} variant="h1">PROJECTS</Typography>
-    //         <Typography style={{
-    //             fontFamily: 'comfortaa',
-    //             fontWeight: '500'
-    //         }} variant="h3">Sneek-Peek to projects</Typography>
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{
-    //         display: "flex",
-    //         flexDirection: 'column',
-    //         justifyContent: 'center',
-    //         alignItems: "center",
-    //         paddingTop: "80px"
-    //     }}>
-    //         <ProjectImage />
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{display: "flex",
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: "center"}}>
-    //         <ProjectDesc />
-    //         {/* <h1 style={{color: '#ffffff'}}>Content</h1>     */}
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{display: "flex",
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: "center"}}>
-    //         <ProjectDesc />
-    //         {/* <h1 style={{color: '#ffffff'}}>Content</h1>     */}
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{
-    //         display: "flex",
-    //         flexDirection: 'column',
-    //         justifyContent: 'center',
-    //         alignItems: "center",
-    //         paddingTop: "80px"
-    //     }}>
-    //         <ProjectImage />
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{
-    //         display: "flex",
-    //         flexDirection: 'column',
-    //         justifyContent: 'center',
-    //         alignItems: "center",
-    //         paddingTop: "80px"
-    //     }}>
-    //         <ProjectImage />
-    //     </Grid>
-
-    //     <Grid item xs={12} md={6} style={{display: "flex",
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: "center"}}>
-    //         <ProjectDesc />
-    //         {/* <h1 style={{color: '#ffffff'}}>Content</h1>     */}
-    //     </Grid>
-
-    // </Grid>
-    <Grid container id="projects" style={{ paddingBottom: "50px", background: "#000000", overflowX: "hidden!important" }}>
+    <Grid container id="projects" style={{ paddingBottom: "50px", background: '#000000', overflowX: "hidden!important" }}>
 
       <Grid container style={{ padding: "10px" }}>
         <Grid item xs={12} >
           <ThemeProvider theme={theme} >
-            <Typography style={{
-              fontFamily: 'Montserrat',
-              fontStyle: 'normal',
-              fontWeight: '900',
-              color: 'rgba(255, 255, 255)',
-              lineHeight: '55px',
-              letterSpacing: '5px',
-              paddingTop: "50px",
-              marginLeft: "10px",
-              textAlign: 'center'
-            }} variant="h1">PROJECT</Typography>
-            <Typography style={{
-              fontFamily: 'comfortaa',
-              fontWeight: '500',
-              color: "#ffffff",
-              marginLeft: "10px",
-              textAlign: "center"
-            }} variant="h4">Sneek-peek to projects</Typography>
+          <Typography align='center' style={{
+              fontFamily: 'roboto',
+              fontWeight: '700',
+              color: '#ffffff',
+              paddingTop: "20px"
+            }} variant="h2">Project</Typography>
+            <Typography align='center' variant="h5" style={{ opacity: '68%', color: '#ffffff' }}>Sneek-peek to projects</Typography>
           </ThemeProvider>
         </Grid>
       </Grid>
@@ -157,8 +66,8 @@ function Project() {
             </Typography>
             <br />
             <Link href="https://github.com/APOORVANAGAR-2002/Headphones" target="_blank" variant="button" style={{
-              color: "#00A8E8",
-              border: "1px solid #00A8E8",
+              color: "#006E69",
+              border: "1px solid #006E69",
               textDecoration: "none",
               padding: "10px",
               borderRadius: "5px"
@@ -183,15 +92,6 @@ function Project() {
               for implementing file-handling.
             </Typography>
             <br />
-            {/* <Link href="#" target="_blank" variant="button" style={{
-              color: "#00A8E8",
-              border: "1px solid #00A8E8",
-              textDecoration: "none",
-              padding: "10px",
-              borderRadius: "5px"
-            }}>
-              View Project
-            </Link> */}
           </ThemeProvider>
         </Grid>
       </Grid>
@@ -209,8 +109,8 @@ function Project() {
             </Typography>
             <br />
             <Link href="https://apoorvanagar-2002.github.io/game-called-tic-tac-toe/" target="_blank" variant="button" style={{
-              color: "#00A8E8",
-              border: "1px solid #00A8E8",
+              color: "#006E69",
+              border: "1px solid #006E69",
               textDecoration: "none",
               padding: "10px",
               borderRadius: "5px"
@@ -235,15 +135,6 @@ function Project() {
               project.
             </Typography>
             <br />
-            {/* <Link href="#" target="_blank" variant="button" style={{
-              color: "#00A8E8",
-              border: "1px solid #00A8E8",
-              textDecoration: "none",
-              padding: "10px",
-              borderRadius: "5px"
-            }}>
-              View Project
-            </Link> */}
           </ThemeProvider>
         </Grid>
       </Grid>

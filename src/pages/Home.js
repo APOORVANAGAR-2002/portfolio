@@ -6,7 +6,6 @@ import { Skills } from "../components/homepage/Skills";
 import { Footer } from "../components/homepage/Footer";
 import { Intro } from "../components/homepage/Intro";
 import "typeface-roboto";
-// import ParallaxComp from "../components/ParallaxComp";
 
 const useStyles = makeStyles((theme) => ({
     root: {
