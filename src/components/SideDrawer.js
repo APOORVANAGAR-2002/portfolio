@@ -3,8 +3,8 @@ import WorkIcon from '@material-ui/icons/Work';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { useHistory } from "react-router";
 import "@fontsource/poppins";
-import { Typography } from "@material-ui/core";
 import { FaHandsHelping } from "react-icons/fa";
+import HomeIcon from '@mui/icons-material/Home';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,8 +15,6 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Poppins',
         display: 'flex',
         flexDirection: 'column',
-        // justifyContent: 'center',
-        // overflowY: 'hidden!important',   
     },
     listItem: {
         
@@ -32,7 +30,16 @@ export default function SideDrawer({ setDrawerOpen }) {
         <div>
             <List component="nav" className={classes.root}>
 
-                {/* <Typography variant="h5">Navbar</Typography> */}
+                <ListItem button className={classes.listItem } onClick={() => {
+                    history.push("/");
+                    setDrawerOpen(false);
+                }}>
+                    <ListItemIcon>
+                        <HomeIcon style={{ color: '#EAE0D5', padding: '10px' }} />
+                    </ListItemIcon>
+                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>Home</ListItemText>
+                </ListItem>
+
 
                 <ListItem button className={classes.listItem } onClick={() => {
                     history.push("/about");
@@ -46,13 +53,13 @@ export default function SideDrawer({ setDrawerOpen }) {
 
 
                 <ListItem button onClick={() => {
-                    history.push("/work");
+                    history.push("/projects");
                     setDrawerOpen(false);
                 }} >
                     <ListItemIcon>
                         <WorkIcon style={{ color: '#EAE0D5', padding: '10px' }} />
                     </ListItemIcon>
-                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>Work</ListItemText>
+                    <ListItemText variant="h6" style={{ color: '#EAE0D5' }}>Projects</ListItemText>
                 </ListItem>
 
                 <ListItem button onClick={() => {
