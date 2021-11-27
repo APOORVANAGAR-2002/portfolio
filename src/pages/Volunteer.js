@@ -14,6 +14,7 @@ import Carousel1 from '../components/carousel/Carousel1';
 import Carousel2 from '../components/carousel/Carousel2';
 import GDSCLogo from '../images/GDSC Logo.png';
 import Carousel3 from '../components/carousel/Carousel3';
+import "typeface-roboto";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,9 +27,6 @@ const useStyles = makeStyles((theme) => ({
     media: {
         height: 0,
         paddingTop: '56.25%', // 16:9
-    },
-    avatar: {
-        backgroundColor: red[500],
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -56,28 +54,18 @@ function Volunteer() {
     const classes = useStyles();
 
     return (
-        <Grid container style={{ minHeight: "100vh", display: "flex", justifyContent: "center" }}>
-            <Grid container style={{ padding: "10px" }}>
+        <Grid container style={{ minHeight: "100vh", display: "flex", justifyContent: "center", padding: '2%' }}>
+            <Grid container style={{ padding: "10px"}}>
                 <Grid item xs={12} >
                     <ThemeProvider theme={theme} >
-                        <Typography style={{
-                            fontFamily: 'Montserrat',
-                            fontStyle: 'normal',
-                            fontWeight: '900',
-                            color: 'rgba(0, 0, 0)',
-                            lineHeight: '20px',
-                            letterSpacing: "5px",
-                            paddingTop: "50px",
-                            marginLeft: "10px",
-                            textAlign: 'center'
-                        }} variant="h2">COMMUNITY</Typography>
-                        <Typography style={{
-                            fontFamily: 'comfortaa',
-                            fontWeight: '500',
+                        <Typography align='center' style={{
+                            fontFamily: 'roboto',
+                            fontWeight: '700',
                             color: "#000000",
-                            marginLeft: "10px",
-                            textAlign: "center"
-                        }} variant="h4">Volunteering</Typography>
+                            paddingTop: "20px",
+                            letterSpacing: '5px'
+                        }} variant="h2">COMMUNITY</Typography>
+                        <Typography align='center' variant="h5" style={{ opacity: '68%' }}>Volunteering</Typography>
                     </ThemeProvider>
                 </Grid>
             </Grid>
@@ -86,7 +74,7 @@ function Volunteer() {
                 padding: "10px",
                 justifyContent: 'center'
             }}>
-                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
                             style={{ background: "#000000" }}
@@ -102,38 +90,12 @@ function Volunteer() {
                         <CardContent>
                             <Typography variant="subtitle1">Sep 2020 - Aug 2021</Typography>
                             <Typography variant="body2">
-                            Delivered multiple sessions teaching DSA, tools like Git & GitHub and organising monthly empowerment series receiving participation of more than 30 students across all events.                            </Typography>
+                                Delivered multiple sessions teaching DSA, tools like Git & GitHub and organising monthly empowerment series receiving participation of more than 30 students across all events.                            </Typography>
                         </CardContent>
-                        {/* <CardActions disableSpacing >
-                            <IconButton
-                                className={clsx(classes.expand, {
-                                    [classes.expandOpen]: expanded1,
-                                })}
-                                onClick={() => {
-                                    set
-                                }}
-                                aria-expanded={expanded1}
-                                aria-label="show more"
-                                style={{ margin: "auto" }}
-
-                            >
-                                <ExpandMoreIcon />
-                            </IconButton>
-                        </CardActions>
-
-                        <Collapse in={expanded1} timeout="auto" unmountOnExit>
-                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
-                                <Typography variant="body2" >
-                                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                                </Typography>
-                            </CardContent>
-                        </Collapse> */}
-
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
                             style={{ background: "#000000" }}
@@ -152,38 +114,14 @@ function Volunteer() {
                         <CardContent>
                             <Typography variant="subtitle1">Nov 2020 - Present</Typography>
                             <Typography variant="body2" >
-                            Delivered sessions teaching Competitive Programming topics in Code Chef MUST initiatives of 
-                            ‘Kaizen’ and ‘Incipience’ receiving participation of over 40 students.
+                                Delivered sessions teaching Competitive Programming topics in Code Chef MUST initiatives of
+                                ‘Kaizen’ and ‘Incipience’ receiving participation of over 40 students.
                             </Typography>
                         </CardContent>
-
-                        {/* <CardActions disableSpacing >
-                            <IconButton
-                                className={clsx(classes.expand, {
-                                    [classes.expandOpen]: expanded2,
-                                })}
-                                onClick={handleExpandClick2}
-                                aria-expanded={expanded2}
-                                aria-label="show more"
-                                style={{ margin: "auto" }}
-
-                            >
-                                <ExpandMoreIcon />
-                            </IconButton>
-                        </CardActions>
-
-                        <Collapse in={expanded2} timeout="auto" unmountOnExit>
-                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
-                                <Typography variant="body2" >
-                                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                                </Typography>
-                            </CardContent>
-                        </Collapse> */}
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
+                <Grid item style={{ padding: "10px", display: "flex", justifyContent: "center" }}>
                     <Card className={classes.root}>
                         <CardHeader
                             style={{ background: "#000000" }}
@@ -203,32 +141,6 @@ function Volunteer() {
                                 them with the help of technology.
                             </Typography>
                         </CardContent>
-                        {/* <CardActions disableSpacing >
-                            <IconButton
-                                className={clsx(classes.expand, {
-                                    [classes.expandOpen]: expanded1,
-                                })}
-                                onClick={() => {
-                                    set
-                                }}
-                                aria-expanded={expanded1}
-                                aria-label="show more"
-                                style={{ margin: "auto" }}
-
-                            >
-                                <ExpandMoreIcon />
-                            </IconButton>
-                        </CardActions>
-
-                        <Collapse in={expanded1} timeout="auto" unmountOnExit>
-                            <CardContent style={{ color: "#ffffff", background: "#000000" }}>
-                                <Typography variant="body2" >
-                                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                                </Typography>
-                            </CardContent>
-                        </Collapse> */}
-
                     </Card>
                 </Grid>
 

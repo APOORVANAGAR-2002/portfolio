@@ -11,7 +11,8 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import BootCamp from '../../images/assests/BootCamp.png';
-import Git from '../../images/assests/Git.png';
+import Incipence from '../../images/assests/Incipence.png';
+import Kaizen from '../../images/assests/Kaizen.png';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -19,12 +20,12 @@ const tutorialSteps = [
     {
         label: 'Kaizen Series',
         imgPath:
-            `${BootCamp}`,
+            `${Kaizen}`,
     },
     {
         label: 'Incipence Series',
         imgPath:
-            `${Git}`,
+            `${Incipence}`,
     },
 
 ];
