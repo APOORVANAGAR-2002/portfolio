@@ -6,7 +6,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import { Grid, createMuiTheme, responsiveFontSizes } from '@material-ui/core';
 import CodeForCauseLogo from "../images/CodeForCauseLogo.jpg";
 import CodeChefLogo from "../images/CodeChefLogo.png";
@@ -19,14 +18,13 @@ import "typeface-roboto";
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
-        // height: 500,
         background: "#000000",
         color: "#ffffff",
         boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)"
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%', 
     },
     expand: {
         transform: 'rotate(0deg)',
