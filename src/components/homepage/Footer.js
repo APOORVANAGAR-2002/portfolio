@@ -1,4 +1,4 @@
-import { createMuiTheme, Grid, makeStyles, responsiveFontSizes, ThemeProvider, Typography } from "@material-ui/core";
+import {  Grid, makeStyles, ThemeProvider, Typography } from "@material-ui/core";
 import '@fontsource/comfortaa';
 import "@fontsource/montserrat";
 import Aavatar from '../../images/aavatar.png';
@@ -46,9 +46,6 @@ const useStyles = makeStyles((theme) => ({
     
 }));
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
-
 function Footer() {
 
     const classes = useStyles();
@@ -67,25 +64,25 @@ function Footer() {
                 <Grid item xs={12} sm={6}>
                     <div className={classes.links}>
                         <GitHubIcon style={{ padding: '1rem' }} />
-                        <a href="https://github.com/APOORVANAGAR-2002" target="_blank" className={classes.text}>
+                        <a href="https://github.com/APOORVANAGAR-2002" target="_blank" rel="noreferrer" className={classes.text}>
                             @APOORVANAGAR-2002
                         </a>
                     </div>
                     <div className={classes.links}>
                         <TwitterIcon style={{ padding: '1rem' }} />
-                        <a href="https://twitter.com/nagar248" target="_blank" className={classes.text}>
+                        <a href="https://twitter.com/nagar248" target="_blank" rel="noreferrer" className={classes.text}>
                             @nagar248
                         </a>
                     </div>
                     <div className={classes.links}>
                         <LinkedInIcon style={{ padding: '1rem' }} />
-                        <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" className={classes.text}>
+                        <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" rel="noreferrer" className={classes.text}>
                             Apoorva Nagar
                         </a>
                     </div>
                     <div className={classes.links}>
                         <SiGmail style={{ padding: '1rem' }} />
-                        <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" className={classes.text}>
+                        <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" rel="noreferrer" className={classes.text}>
                             apoorvanagar2002@gmail.com
                         </a>
                     </div>

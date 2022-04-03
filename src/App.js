@@ -2,9 +2,7 @@ import { Home } from "./pages/Home";
 // import { Project } from "./pages/Project";
 import { Project } from './pages/Project';
 import { Route, Switch } from "react-router-dom";
-import { Skills } from "./components/homepage/Skills";
 import { Volunteer } from "./pages/Volunteer";
-import { Footer } from "./components/homepage/Footer";
 import { About1 } from "./pages/About1";
 import { MainLayout } from "./layouts/MainLayout";
 

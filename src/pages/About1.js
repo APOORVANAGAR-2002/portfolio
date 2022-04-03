@@ -46,10 +46,12 @@ function getSteps() {
     return ["Bachelor's of Computer Science and Engineering ", " "];
 }
 
-function getStepContent(step) {
+function getStepContent(step = 0) {
     switch (step) {
         case 0:
             return `Mody University of Science and Technology, Laxmangarh, Sikar, Raj.`;
+        default:
+            return `none`;
     }
 }
 

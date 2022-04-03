@@ -52,17 +52,6 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function getSteps() {
-    return ["Bachelor's of Computer Science and Engineering ", " "];
-}
-
-function getStepContent(step) {
-    switch (step) {
-        case 0:
-            return `Mody University of Science and Technology, Laxmangarh, Sikar, Raj.`;
-    }
-}
-
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -71,7 +60,6 @@ theme = responsiveFontSizes(theme);
 function About() {
 
     const classes = useStyles();
-    const steps = getSteps();
 
     return (
 

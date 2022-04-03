@@ -53,7 +53,7 @@ function Project() {
 
       <Grid container style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff", }}>
         <Grid item xs={12} sm={4} style={{ textAlign: "center"}} >
-          <img src={AccessoriesSim} alt="bg Image" style={{ width: "200px" }} />
+          <img src={AccessoriesSim} alt="project-1" style={{ width: "200px" }} />
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px"}}>
           <ThemeProvider>
@@ -80,7 +80,7 @@ function Project() {
 
       <Grid container direction="row-reverse" style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
         <Grid item xs={12} sm={4} style={{ textAlign: "center",  }} >
-          <img src={Image} alt="bg Image" style={{ width: "200px" }} />
+          <img src={Image} alt="project-2" style={{ width: "200px" }} />
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px",  }}>
           <ThemeProvider>
@@ -98,7 +98,7 @@ function Project() {
 
       <Grid container  style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff", }}>
         <Grid item xs={12} sm={4} style={{ textAlign: "center",  }} >
-          <img src={TicTacToe} alt="bg Image" style={{ width: "200px" }} />
+          <img src={TicTacToe} alt="project-2" style={{ width: "200px" }} />
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px", }}>
           <ThemeProvider>
@@ -124,7 +124,7 @@ function Project() {
 
       <Grid container  direction="row-reverse" style={{ padding: "30px", fontFamily: "Poppins", color: "#ffffff" }}>
         <Grid item xs={12} sm={4} style={{ textAlign: "center", }} >
-          <img src={SnakeGame} alt="bg Image" className={classes.image} style={{ width: "200px" }} />
+          <img src={SnakeGame} alt="project-2" className={classes.image} style={{ width: "200px" }} />
         </Grid>
         <Grid item xs={12} sm={8} style={{ padding: "10px" }}>
           <ThemeProvider>

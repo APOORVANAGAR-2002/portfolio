@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';
@@ -10,7 +8,6 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import BootCamp from '../../images/assests/BootCamp.png';
 import Incipence from '../../images/assests/Incipence.png';
 import Kaizen from '../../images/assests/Kaizen.png';
 

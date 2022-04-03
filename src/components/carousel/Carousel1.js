@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import Paper from '@material-ui/core/Paper';

@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { pink } from '@material-ui/core/colors';
 import Avatar from '@material-ui/core/Avatar';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -26,7 +25,7 @@ export default function SocialMedia() {
     return (
         <div className={classes.root}>
             <Avatar className={classes.icon}>
-                <a href="https://twitter.com/nagar248" target="_blank" style={{
+                <a href="https://twitter.com/nagar248" target="_blank" rel="noreferrer" style={{
                     textDecoration: "none",
                     color: "inherit"
                 }}>
@@ -34,7 +33,7 @@ export default function SocialMedia() {
                 </a>
             </Avatar>
             <Avatar className={classes.icon}>
-                <a href="https://github.com/APOORVANAGAR-2002" target="_blank" style={{
+                <a href="https://github.com/APOORVANAGAR-2002" target="_blank" rel="noreferrer" style={{
                     textDecoration: "none",
                     color: "inherit"
                 }}>
@@ -42,7 +41,7 @@ export default function SocialMedia() {
                 </a>
             </Avatar>
             <Avatar className={classes.icon}>
-                <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" style={{
+                <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" rel="noreferrer" style={{
                     textDecoration: "none",
                     color: "inherit"
                 }}>
@@ -51,7 +50,7 @@ export default function SocialMedia() {
             </Avatar>
             <Avatar className={classes.icon}>
                 <address>
-                <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" style={{
+                <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" rel="noreferrer" style={{
                     textDecoration: "none",
                     color: "inherit"
                 }}>
