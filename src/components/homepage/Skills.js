@@ -1,5 +1,7 @@
 import { createMuiTheme, Grid, makeStyles, responsiveFontSizes, ThemeProvider, Typography } from "@material-ui/core";
-import { DiCss3, DiGit, DiHtml5, DiJavascript1, DiPython, DiReact, DiGithubBadge, DiBootstrap } from "react-icons/di";
+import { DiCss3, DiGit, DiHtml5, DiJavascript1, DiPython, DiReact, DiGithubBadge, DiBootstrap, DiVisualstudio } from "react-icons/di";
+import { SiNextDotJs } from "react-icons/si";
+import { FiFigma } from "react-icons/fi";
 import Tilt from 'react-parallax-tilt';
 import '@fontsource/comfortaa';
 import "@fontsource/montserrat";
@@ -91,8 +93,6 @@ function Skills() {
           </Tilt>
         </Grid>
 
-
-
         <Grid item xs={4} sm={2} className={classes.icons}>
           <Tilt glareEnable>
             <DiGithubBadge fontSize="80px" color="#006E69" />
@@ -104,6 +104,25 @@ function Skills() {
             <DiBootstrap fontSize="80px" color="#000000" />
           </Tilt>
         </Grid>
+
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <SiNextDotJs fontSize="70px" color="#006E69" />
+          </Tilt>
+        </Grid>
+
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <DiVisualstudio fontSize="80px" color="#000000" />
+          </Tilt>
+        </Grid>
+
+        <Grid item xs={4} sm={2} className={classes.icons}>
+          <Tilt glareEnable>
+            <FiFigma fontSize="80px" color="#006E69" />
+          </Tilt>
+        </Grid>
+
       </Grid>
 
     </Grid>

@@ -98,7 +98,7 @@ function About() {
                             color: "#006E69",
                             paddingTop: "20px"
                         }} variant="h2">It’s me</Typography>
-                            <Typography variant="h5" style={{ opacity: '68%' }}>Sub-heading</Typography>
+                            {/* <Typography variant="h5" style={{ opacity: '68%' }}>Sub-heading</Typography> */}
                             <br />
                             <Typography variant="body1" style={{
                                 fontFamily: 'roboto',

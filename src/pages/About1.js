@@ -96,7 +96,7 @@ function About1() {
                                 I am an undergraduate pre-final year student pursuing a bachelor's degree
                                 in Computer Science and Engineering. I have an interest in web development,
                                 particularly in the front-end. I am familiar with few programming languages
-                                and frameworks like C, Python, JavaScript, BootStrap etc.
+                                and frameworks like C, Python, JavaScript, ReactJs, BootStrap, MaterialUI etc.
                                 <br />
                                 Apart from these,I also relish exploring other domains such as virtual reality and machine learning.
                                 As a part of various student programs, I like empowering tech cultures amongst my
