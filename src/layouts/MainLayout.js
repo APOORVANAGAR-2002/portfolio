@@ -1,13 +1,13 @@
-import { AppBar, Button, createMuiTheme, Drawer, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Drawer, IconButton, makeStyles, Toolbar } from "@material-ui/core";
 import React from "react";
 import { useState } from "react";
 import SideDrawer from "../components/SideDrawer";
 import MenuIcon from '@material-ui/icons/Menu';
-import PersonIcon from '@mui/icons-material/Person';
-import BuildIcon from '@mui/icons-material/Build';
-import WorkIcon from '@mui/icons-material/Work';
-import { FaHandsHelping } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+// import PersonIcon from '@mui/icons-material/Person';
+// import BuildIcon from '@mui/icons-material/Build';
+// import WorkIcon from '@mui/icons-material/Work';
+// import { FaHandsHelping } from "react-icons/fa";
+// import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {

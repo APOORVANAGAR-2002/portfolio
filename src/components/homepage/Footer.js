@@ -32,8 +32,18 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         fontWeight: '200',
-        color: '#ffffff'
+        color: '#ffffff',
+        textDecoration: 'none',
+        margin: '1rem'
+    },
+    links: {
+        display: 'flex',
+        justifyContent: 'left',
+    },
+    avatar: {
+        textAlign: 'center'
     }
+    
 }));
 
 let theme = createMuiTheme();
@@ -51,28 +61,36 @@ function Footer() {
                 display: 'flex',
                 justifyContent: 'center'
             }}>
-                <Grid item xs={12} className={classes.image}>
-                    <img src={Aavatar} width='140px' alt='avatar' />
+                <Grid item xs={12} sm={6} className={classes.avatar}>
+                    <img src={Aavatar} width='180px' alt='avatar' />
                 </Grid>
-                <Grid item xs={12} sm={3} className={classes.icons}>
-                    <GitHubIcon />
-                    <Typography variant='body2' className={classes.text}>@APOORVANAGAR-2002</Typography>
-                </Grid>
-                <Grid item xs={12} sm={3} className={classes.icons}>
-                    <TwitterIcon />
-                    <Typography variant='body2' className={classes.text}>@nagar248</Typography>
-                </Grid>
-                <Grid item xs={12} sm={3} className={classes.icons}>
-                    <LinkedInIcon />
-                    <Typography variant='body2' className={classes.text}>Apoorva Nagar</Typography>
-                </Grid>
-                <Grid item xs={12} sm={3} className={classes.icons}>
-                    <SiGmail />
-                    <Typography variant='body2' className={classes.text}>apoorvanagar2002@gmail.com</Typography>
-                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <div className={classes.links}>
+                        <GitHubIcon style={{ padding: '1rem' }} />
+                        <a href="https://github.com/APOORVANAGAR-2002" target="_blank" className={classes.text}>
+                            @APOORVANAGAR-2002
+                        </a>
+                    </div>
+                    <div className={classes.links}>
+                        <TwitterIcon style={{ padding: '1rem' }} />
+                        <a href="https://twitter.com/nagar248" target="_blank" className={classes.text}>
+                            @nagar248
+                        </a>
+                    </div>
+                    <div className={classes.links}>
+                        <LinkedInIcon style={{ padding: '1rem' }} />
+                        <a href="https://www.linkedin.com/in/apoorva-nagar-251b9318b/" target="_blank" className={classes.text}>
+                            Apoorva Nagar
+                        </a>
+                    </div>
+                    <div className={classes.links}>
+                        <SiGmail style={{ padding: '1rem' }} />
+                        <a href="mailto:apoorvanagar2002@gmail.com" target="_blank" className={classes.text}>
+                            apoorvanagar2002@gmail.com
+                        </a>
+                    </div>
 
-
-
+                </Grid>
             </Grid>
 
             <Grid container style={{}}>

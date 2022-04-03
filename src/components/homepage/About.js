@@ -1,11 +1,10 @@
-import { Grid, makeStyles, Step, StepContent, StepLabel, Stepper, Typography } from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import '@fontsource/comfortaa';
 import "@fontsource/montserrat";
 import "@fontsource/poppins";
 import SocialMedia from "../SocialMedia";
 import ApoorvaNagar from "../../images/Apoorva Nagar.png";
-import { BiRadioCircleMarked } from "react-icons/bi";
 import "typeface-roboto";
 
 const useStyles = makeStyles((theme) => ({
